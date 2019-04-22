@@ -1,0 +1,1 @@
+﻿Start-Process -FilePath "C:\Users\brainwatcher\Documents\Rainmeter\Skins\Rainmeter.exe" -ArgumentList "!RefreshApp"
