@@ -40,6 +40,11 @@ $list += $add_list
 Remove-Variable add_list
 $list | Export-Excel details.xlsx 
 Start-Process -FilePath "C:\Users\brainwatcher\Documents\Rainmeter\Skins\Rainmeter.exe" -ArgumentList "!RefreshApp"
-
+#"C:\Program Files\Rainmeter\Rainmeter.exe" !ActivateConfig "illustro\Clock" "Clock.ini"
+$x1="!ActivateConfig"
+$x2='"'+"illustro\icon\$add_name"+'"'
+$x3='"'+"$add_name.ini"+'"'
+Start-Process -FilePath "C:\Users\brainwatcher\Documents\Rainmeter\Skins\Rainmeter.exe" -ArgumentList $x1,$x2,$x3
+& .\script\align.ps1
 
 
