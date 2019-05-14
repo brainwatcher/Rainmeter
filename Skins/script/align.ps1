@@ -43,4 +43,4 @@ foreach($i in 0..($list.Count-1))
 }
 Set-Content -Path .\Rainmeter.ini -Value $text
 #Set-Content -Path .\list1.csv -Value $list
-Start-Process -FilePath "C:\Users\brainwatcher\Documents\Rainmeter\Skins\Rainmeter.exe" -ArgumentList "!RefreshApp"
+Start-Process -FilePath $env:Rainmeterexe -ArgumentList "!RefreshApp"
