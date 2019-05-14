@@ -20,7 +20,7 @@ filename=fullfile(pwd,d.name);
 if ~isempty(map)
     X=ind2rgb(X,map);
 end
-outfilename=[prefix '.png'];
+outfilename=[prefix '2.png'];
 switch mode
     case 1
         if ~isempty(t)&&length(unique(t))>1

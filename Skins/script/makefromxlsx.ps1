@@ -17,7 +17,7 @@ foreach ($i in 0..($list.Count-1))
     $x2='"'+"illustro\icon\$file"+'"'
     $x3='"'+"$inifile"+'"'
     Start-Process -FilePath $env:Rainmeterexe -ArgumentList $x1,$x2,$x3
-    Start-Sleep -s 0.5
+    #Start-Sleep -s 0.5
     
     cd $env:Skinpath\illustro\icon
 }
