@@ -8,11 +8,22 @@ Add-Type -AssemblyName System.Windows.Forms
 $w=[System.Windows.Forms.Screen]::AllScreens.Bounds.Size[$screen].Width;
 $h=[System.Windows.Forms.Screen]::AllScreens.Bounds.Size[$screen].Height;
 $center= New-Object -TypeName 'float[,]' -ArgumentList 2,2
+if ($env:UserName -eq "brainwatcher")
+{
+$center[0,0]=495/1440*$w+$screen*$w+12
+$center[0,1]=410/900*$h
+$center[1,0]=1030/1440*$w+$screen*$w-36
+$center[1,1]=425/900*$h-3
+$r=158/1698.1*[math]::Sqrt($w*$w+$h*$h)-10
+}
+if ($env:UserName -eq "admin")
+{
 $center[0,0]=495/1440*$w+$screen*$w
 $center[0,1]=410/900*$h
 $center[1,0]=1030/1440*$w+$screen*$w
 $center[1,1]=425/900*$h
 $r=158/1698.1*[math]::Sqrt($w*$w+$h*$h)
+}
 $edge=28
 $part_num=24;
 # process 
