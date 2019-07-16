@@ -29,7 +29,7 @@ $part_num=24;
 # process 
 cd $env:Rainmeterini
 $text = get-content -Path rainmeter.ini
-cd $env:Skinpath
+cd ~\Documents
 $list = Import-Excel details.xlsx 
 $p_x= New-Object 'object[,]' 2,$part_num
 $p_y= New-Object 'object[,]' 2,$part_num

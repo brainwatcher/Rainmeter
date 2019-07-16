@@ -1,4 +1,4 @@
-﻿Set-Location $env:Skinpath
+﻿Set-Location ~\Documents
 $list = @(@(Import-Excel details.xlsx ))
 Set-Location $env:Skinpath\illustro\icon
 foreach ($i in 0..($list.Count-1))
