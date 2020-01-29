@@ -1,0 +1,8 @@
+0. 安装rainmeter 复制Skins文件夹
+1. 手动设置桌面图片
+2. 编辑并复制details0.xlsx到“文档下”，并重命名为details.xlsx
+\script 下
+3. powershell设置（管理员启动） 0_powershellConfig	
+4.  打开并编辑 运行1_add_env.ps1
+5. 2_makefromxlsx （有时候需要运行两次）
+6. 3_align  内更改username 单屏幕改weish 双屏幕改admin
